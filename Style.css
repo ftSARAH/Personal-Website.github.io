@@ -1,0 +1,163 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: rgba(247, 247, 247, 0.5);
+    position: sticky;
+    top: 0;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+    
+}
+
+nav ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    transition: all .5s ease;
+
+}
+nav ul li a:hover{
+   background-color: rgb(78, 44, 44);
+   color: black;
+   box-shadow: 0 0 10px rgb(78, 44, 44);
+ 
+}
+
+/* Home Section */
+#HOME{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: center;
+    height: 840px;
+    color: black;
+}
+#HOME::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(girl.jpg) no-repeat center center/cover;
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+.headings{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px 0px;
+    font-style: bold;
+    float: right;
+}
+.main{
+    position: absolute;
+    top: 60%;
+    left: -40%;
+    right: 10%;
+
+}
+
+.main h1{
+    color: black;
+    font-size: 70px;
+}
+.main p{
+    color: black;
+    font-size: 20px;
+}
+
+/* about section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 150px;
+    margin-bottom: 10px;
+    background: url("background.jpg") no-repeat center center/cover;
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+   transform: translate(125%);
+    width: 300px;
+    height: 300px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+    
+}
+
+.intro {
+    position: absolute;
+    top: 60%;
+    left: -40%;
+    right: 10%;
+}
+.row h2{
+font-size: 40px;
+}
+.row h5{
+    font-size: 25px;
+}
+.footer{
+    margin-top: 10px;
+    width: 100%;
+    padding: 200px;
+    display: flex ;
+    background: url(background.jpg) no-repeat center center/cover;
+}
+.footer div{
+    text-align: center;
+   }
+
+   .col-2{
+     flex-grow: 2;
+   }
+   
+   .footer div h3{
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+   }
+
+   
+
+   .social-icons{
+    margin-top: 70px;
+   }
+
+   .social-icons i{   
+       font-size: 22px;
+       margin: 10px;
+       cursor: pointer;
+   }

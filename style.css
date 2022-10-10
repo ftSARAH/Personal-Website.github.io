@@ -1,0 +1,361 @@
+html{
+    scroll-behavior: auto;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: rgba(247, 247, 247, 0.5);
+    position: sticky;
+    top: 0;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+    
+}
+
+nav ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    transition: all .5s ease;
+
+}
+nav ul li a:hover{
+   background-color: rgb(158, 74, 65);
+   color: black;
+   box-shadow: 0 0 10px rgb(221, 163, 148);
+ 
+}
+
+/* Home Section */
+#HOME{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: center;
+    height: 1000px;
+    color: black;
+}
+#HOME::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(IMG_2687.jpg) no-repeat center center/cover;
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+.headings{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px 0px;
+    font-style: bold;
+    float: right;
+}
+.main{
+    position: absolute;
+    top: 30%;
+    left: -40%;
+    right: 10%;
+
+}
+
+.main h1{
+    color: black;
+    font-size: 70px;
+}
+.main p{
+    color: black;
+    font-size: 30px;
+}
+
+/* about section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 80px;
+    margin-bottom: 0px;
+    background: url("IMG_2687.jpg") no-repeat center center/cover;
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+   transform: translate(110%);
+    width: 400px;
+    height: 300px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.intro {
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    right: 10%;
+}
+.row h2{
+font-size: 50px;
+flex-direction: column-reverse;
+color: black;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.row h5{
+    font-size: 25px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*education section*/
+#education{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 150px;
+    margin-bottom: 10px;
+    background: url("IMG_2687.jpg") no-repeat center center/cover;
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+    color: rgb(15, 6, 6);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+table, th, td {
+background-color: bisque;
+border: 2px solid rgb(230, 135, 84);
+width: 40%;
+align-items: center;
+color: rgb(94, 47, 37);
+}
+th {
+    color: black;;
+}
+td {
+    height: 10px;
+    vertical-align: bottom;
+    text-decoration-color: rgb(38, 14, 14);;
+  }
+
+tr:hover{
+    text-align: center;
+    background-color: rgb(241, 193, 193);
+    color: rgb(4, 4, 4);
+
+}
+/*other section*/
+#other{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 150px;
+    margin-bottom: 10px;
+    background: url("IMG_2687.jpg") no-repeat center center/cover;
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+    color: rgb(38, 14, 14);
+    font-size: 25px;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 150px;
+    margin-bottom: 10px;
+    background: url("IMG_2687.jpg") no-repeat center center/cover;
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.footer div{
+    text-align: center;
+   }
+
+   .col-2{
+     flex-grow: 2;
+   }
+   
+   .footer div h3{
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+   }
+
+   
+
+   .social-icons{
+    margin-top: 70px;
+   }
+
+   .social-icons i{   
+       font-size: 22px;
+       margin: 10px;
+       cursor: pointer;
+   }
+   html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  body {
+    position: absolute;
+    background: #333;
+    box-sizing: content-box;
+    top: 50%;
+    left: 50%;
+    margin: -240px 0 0 -180px;
+  }
+  
+  h1 {
+    padding: 0 0 30px 0;
+    display: block;
+    font-family: Trebuchet MS;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .margin {
+    margin: 0 15%;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  .inputGroup {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .inputGroup label {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-family: Trebuchet MS;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .inputGroup input,
+  .inputGroup textarea {
+    display: block;
+    width: 280px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    left: 25px;
+    padding: 5px;
+    font-family: Trebuchet MS;
+    background: none;
+    color: #ccc;
+  }
+  
+  .inputGroup input:focus ~ label,
+  .inputGroup input:valid ~ label,
+  .inputGroup textarea:focus ~ label,
+  .inputGroup textarea:valid ~ label {
+    top: -20px;
+    transition: all 0.3s ease;
+    font-size: 13px;
+  }
+  
+  .inputGroup input:focus ~ .inputBar:before,
+  .inputGroup input:focus ~ .inputBar:after,
+  .inputGroup textarea:focus ~ .inputBar:before,
+  .inputGroup textarea:focus ~ .inputBar:after {
+    width: 50%;
+  }
+  
+  .inputGroup textarea {
+    height: 100px;
+    width: 280px;
+    overflow: auto;
+    resize: none;
+  }
+  
+  .inputGroup .inputBar {
+    position: relative;
+    display: block;
+    width: 290px;
+  }
+  
+  .inputGroup .inputBar:before,
+  .inputGroup .inputBar:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    background: white;
+    height: 2px;
+    transition: all 0.2s ease;
+  }
+  
+  .inputGroup .inputBar:after {
+    right: 50%;
+  }
+  
+  .inputGroup .inputBar:before {
+    left: 50%;
+  }
+  
+  button {
+    background-color: white;
+    border: none;
+    padding: 15px 0;
+    margin: 0;
+    width: 290px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    font-family: Trebuchet MS;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 6px #a1a1a1;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    box-shadow: 0 4px #a1a1a1;
+    top: 2px;
+  }
+  
+  button:active {
+    top: 6px;
+    box-shadow: 0 0;
+  }
+  
